@@ -1,7 +1,7 @@
 # GitHub and research-release audit
 
-Historical pre-organization audit. For the current layout and resolved items,
-see ../ORGANIZATION.md and ../VALIDATION.md. The CSV inventory here includes
+Historical pre-organization audit. For the current file list, use
+../../data/manifest.csv and ../../outputs/manifest.csv. The CSV inventory here includes
 private working assets that are deliberately absent from the release.
 
 Audit date: October 27, 2026. Deadline: October 30, 2026.

@@ -49,6 +49,16 @@ alternatives. No experimental behavior was changed during release organization.
 Operator parameter validation is incomplete: use positive ramp rates, end CO2
 above start CO2, sensible timing, and the documented Q ladder.
 
-For official programming documentation and methods papers, see
-[references](../docs/REFERENCES.md). The source files here are research software,
-not LI-COR-endorsed instrument software.
+The source files here are research software, not LI-COR-endorsed instrument
+software. Official LI-COR documentation consulted during development (not bundled
+or relicensed here; current availability not revalidated):
+
+- [LI-6800 manuals](https://www.licor.com/support/LI-6800/manuals.html)
+- [Background-program details](https://dl.licor.com/projects/6800/BP_Details.pdf)
+- [Topics / data and control dictionaries](https://dl.licor.com/projects/6800/LI-6800_Topics_2.1.0.pdf)
+- [Background-program overview](https://www.licor.com/support/LI-6800/topics/background-program-overview.html)
+- [Step reference](https://www.licor.com/support/LI-6800/topics/background-program-step-reference.html)
+- [Examples](https://www.licor.com/support/LI-6800/topics/background-program-examples.html)
+- [Humidity control](https://www.licor.com/support/LI-6800/topics/environment-h2o-control.html)
+
+Methods papers are listed in the main [README](../README.md#literature-cited).

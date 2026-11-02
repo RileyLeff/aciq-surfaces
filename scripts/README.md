@@ -22,6 +22,46 @@ research scripts import one another by name.
 | analyze_phrag_brownsville_additive_yields.py | Additive fluorescence yields and figures |
 | test_phrag_brownsville_npq_zone_difference.py | Statistical analysis, NOT a software test |
 
+## Reproducing the cohort analysis
+
+Install Git LFS and uv; clone and run `git lfs pull`. The sole LFS dependency is
+the generated cohort points CSV; the cohort stage can regenerate it from raw logs.
+Use Python 3.13.7 and the committed uv lock.
+
+```sh
+uv sync --frozen --extra bayes
+uv run --frozen --extra bayes python -m unittest discover -s tests -v
+uv run --frozen --extra bayes python scripts/release_manifest.py --check
+```
+
+Tier B also requires R and `plantecophys` (the original environment used R 4.2.2
+and plantecophys 1.4.6; the uv lock does not lock R packages).
+
+The runner prints commands by default. A single selected stage does not rerun
+prerequisites automatically.
+
+```sh
+uv run --frozen --extra bayes python scripts/reproduce.py
+uv run --frozen --extra bayes python scripts/reproduce.py --stage cohort --execute
+uv run --frozen --extra bayes python scripts/reproduce.py --stage tier-a --execute
+uv run --frozen --extra bayes python scripts/reproduce.py --stage tier-b --execute
+uv run --frozen --extra bayes python scripts/reproduce.py --stage fluorescence --execute
+uv run --frozen --extra bayes python scripts/reproduce.py --stage posterior-figures --execute
+```
+
+The last command uses the saved posterior files. Refit them only intentionally
+with `--stage bayes` and `--stage sensitivity`. `--stage all --skip-bayes --execute`
+runs the non-sampling sequence. Outputs are overwritten: use a separate clone.
+The Bayesian default is four chains, 1,500 tuning iterations, 1,000 draws per chain,
+target_accept 0.93, and seeds 20260803 + chain index.
+
+A full non-sampling rerun on October 27, 2026 reproduced 23 of 32 output CSVs at
+rtol=1e-7; the other nine differ by small optimizer/rounding amounts (largest
+change in modeled A about 0.0006 µmol m⁻² s⁻¹). Some weakly identified parameters
+on inactive limiting branches move more (P13 fixed-gm no-TPU Jmax25: 74 vs 155),
+so don't treat every converged parameter as identified. The comparison tables are
+in [docs/release-audit/](../docs/release-audit/).
+
 ## Method development and earlier runs
 
 These entry points preserve the investigation and are not interchangeable with
