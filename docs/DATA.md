@@ -187,6 +187,10 @@ This is a coastal forest:
 
 - Naming generally follows elevation. I've tried to label both where possible. If there's a stray "low" or "high" stranded anywhere, it's labeled by elevation.
 
+You can see a drone flyover over the site from high elevation to low elevation here: https://www.youtube.com/watch?v=CYdcSyuVWdo
+
+And a detailed shot of the forest-marsh ecotone, the low-elevation high-salinity area where we collected our low-elevation Phragmites samples can be found here: https://www.youtube.com/watch?v=X5XHFOf1nWI
+
 ### Sampling Methods
 
 We were not able to get our LI-6800 to maintain consistent internal conditions if we left it outdoors in the humid Virginia summer.
