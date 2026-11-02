@@ -148,6 +148,6 @@ To my cats: meow.
 
 ## AI Statement
 
-The written documentation and public-facing prose (e.g. the root README, docs/DATA.md, docs/PROTOCOL.md, and docs/ANALYSIS.md) is human-made, with the exception of the some of the organization/legwork (e.g. large tables of parameter names, links to code in figure captions, references). Claude did those tasks. 
+The written documentation and public-facing prose (e.g. the root [README](README.md), [docs/DATA.md](docs/DATA.md), [docs/PROTOCOL.md](docs/PROTOCOL.md), and [docs/ANALYSIS.md](docs/ANALYSIS.md)) is human-made, with the exception of the some of the organization/legwork (e.g. large tables of parameter names, links to code in figure captions, references). Claude did those tasks. 
 
 Everything else in this repo is AI generated. 100% of the code in this repository is AI-generated.
