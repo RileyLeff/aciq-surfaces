@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite this repository and the specific commit or release used."
+message: "Please cite the Zenodo archive and the specific commit or release used; cite the protocols.io protocol when using the method."
 type: software
-title: "A Method for Opening Stomata: LI-6800 programs, coastal photosynthesis data, and analyses"
+title: "A/Ci/Q Surfaces: LI-6800 programs, coastal photosynthesis data, and analyses"
+doi: "10.5281/zenodo.23785367"
+version: "1.0.0"
 authors:
   - family-names: Leff
     given-names: Riley
@@ -9,7 +11,7 @@ authors:
     given-names: Acadia
   - family-names: Gedan
     given-names: Keryn
-repository-code: "https://github.com/RileyLeff/method-for-opening-stomata"
+repository-code: "https://github.com/RileyLeff/aciq-surfaces"
 url: "https://rileyleff.com/blog/forcing-plants-to-participate"
 license:
   - MIT
