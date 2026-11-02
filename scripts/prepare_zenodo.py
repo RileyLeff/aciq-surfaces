@@ -59,7 +59,7 @@ def main():
     provenance = {
         "source_commit": git("rev-parse", "HEAD").decode().strip(),
         "repository": "https://github.com/RileyLeff/aciq-surfaces",
-        "snapshot_kind": "version 1.0.0 archive assembled from working tree; not a Git tag",
+        "snapshot_kind": "tracked files at source_commit plus the rendered technical report; see working_tree_status",
         "version": "1.0.0",
         "doi": "10.5281/zenodo.23785367",
         "protocol_doi": "10.17504/protocols.io.92ld3bnong5b/v2",
@@ -95,7 +95,7 @@ def main():
         "Archive DOI: https://doi.org/10.5281/zenodo.23785367\n"
         "Operating protocol: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2\n"
         f"Source base commit: {provenance['source_commit']}\n"
-        "This working snapshot also includes the archive-preparation files.\n"
+        "The ZIP holds the tracked files at that commit plus the rendered TECHNICAL-REPORT.pdf.\n"
         "ARCHIVE-MANIFEST.json inside the ZIP records exact files, hashes, and working-tree status.\n\n"
         "Extract aciq-surfaces.zip. Start with README.md (the technical\n"
         "report), docs/DATA.md, and scripts/README.md.\n"
