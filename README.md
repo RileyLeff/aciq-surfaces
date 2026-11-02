@@ -73,7 +73,7 @@ I want to help dial in the methods, and to do so, I think we need bigger data ma
 
 ## Methods 
 
-See [the data guide](docs/DATA.md) or the [protocols.io protocol](https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2) for detailed information about setup and sampling. Download the exact LI-6800 program we used [here](bp/aciq_dat_biochemical_limits_fixed_h2or_flow600.py).
+See [the data guide](docs/DATA.md) or the [protocols.io protocol](https://doi.org/10.17504/protocols.io.m6gp8em98lzp/v1) for detailed information about setup and sampling. Download the exact LI-6800 program we used [here](bp/aciq_dat_biochemical_limits_fixed_h2or_flow600.py).
 
 ## Results And Discussion
 
@@ -143,7 +143,7 @@ To my cats: meow.
 ## Relevant Links
 
 - Zenodo: https://doi.org/10.5281/zenodo.23785367
-- Protocols.io: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2
+- Protocols.io: https://doi.org/10.17504/protocols.io.m6gp8em98lzp/v1
 - Blog: https://rileyleff.com/blog/notes-on-measuring-plants
 
 ## AI Statement

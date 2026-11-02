@@ -62,7 +62,7 @@ def main():
         "snapshot_kind": "tracked files at source_commit plus the rendered technical report; see working_tree_status",
         "version": "1.0.0",
         "doi": "10.5281/zenodo.23785367",
-        "protocol_doi": "10.17504/protocols.io.92ld3bnong5b/v2",
+        "protocol_doi": "10.17504/protocols.io.m6gp8em98lzp/v1",
         "working_tree_status": git("status", "--short").decode(),
         "explicit_additions": sorted(ADDITIONS),
         "excluded_editorial_drafts": sorted(EXCLUDED),
@@ -93,7 +93,7 @@ def main():
         "Riley Leff, Acadia Conboy, Keryn Gedan\n\n"
         "Archive version: 1.0.0\n"
         "Archive DOI: https://doi.org/10.5281/zenodo.23785367\n"
-        "Operating protocol: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2\n"
+        "Operating protocol: https://doi.org/10.17504/protocols.io.m6gp8em98lzp/v1\n"
         f"Source base commit: {provenance['source_commit']}\n"
         "The ZIP holds the tracked files at that commit plus the rendered TECHNICAL-REPORT.pdf.\n"
         "ARCHIVE-MANIFEST.json inside the ZIP records exact files, hashes, and working-tree status.\n\n"

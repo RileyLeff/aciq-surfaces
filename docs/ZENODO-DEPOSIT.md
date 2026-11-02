@@ -40,13 +40,13 @@ Research data, original figures, and documentation are CC BY 4.0; source code
 is MIT-licensed.
 
 The operating protocol is published at
-https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2.
+https://doi.org/10.17504/protocols.io.m6gp8em98lzp/v1.
 
 ## Related works
 
 - Maintained repository: https://github.com/RileyLeff/aciq-surfaces
 - Narrative article: https://rileyleff.com/blog/notes-on-measuring-plants
-- Protocol: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2 (relation: Is documented by; identifier type: DOI).
+- Protocol: https://doi.org/10.17504/protocols.io.m6gp8em98lzp/v1 (relation: Is documented by; identifier type: DOI).
 
 ## Upload and publication
 
