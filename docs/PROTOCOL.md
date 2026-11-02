@@ -184,7 +184,7 @@ Solution: Check the temperature and humidity controls carefully and be sure to l
 - LI-COR 6800 with 6800-01 fluorometer chamber and a working leaf-temperature sensor. CO2 supply, water supply for the humidifier, desiccant (we used Sorbead Orange Chameleon, Drierite works too), power (battery or AC), and storage.
 - Opaque cover for dark-adapting the leaves. We used aluminum foil and covered the lab's lone window with a tarp.
 - If cutting branches: we used Fiskars plant clippers, a Home Depot bucket, paper towels, filtered sink water, ziplock bags, field flagging to write IDs on, and a sharpie.
-- Program: aciq_dat_biochemical_limits_fixed_h2or_flow600.py.
+- Program: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/bp/aciq_dat_biochemical_limits_fixed_h2or_flow600.py
 - Repository: https://github.com/RileyLeff/aciq-surfaces
 
 ## Metadata
