@@ -166,7 +166,7 @@ Here are some disclaimers, things to consider, and a bit more background info:
 - Sperry J (2013). Cutting-edge research or cutting-edge artefact? An overdue control experiment complicates the xylem refilling story. Plant, Cell & Environment 36:1916-1918. https://doi.org/10.1111/pce.12148
 - Wheeler JK, Huggett BA, Tofte AN, Rockwell FE, Holbrook NM (2013). Cutting xylem under tension or supersaturated with gas can generate PLC and the appearance of rapid recovery from embolism. Plant, Cell & Environment 36:1938-1949. https://doi.org/10.1111/pce.12139
 - LI-COR. LI-6800 operating instructions. https://www.licor.com/support/LI-6800/manuals.html
-- Additional references: [LINK: REFERENCES.md in repo]
+- Additional references: [LINK: Literature Cited in repo README]
 
 ## Troubleshooting
 
