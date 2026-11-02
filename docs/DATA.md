@@ -133,7 +133,7 @@ Quick test of whether fluorometry flashes disturb environmental controls.
 
 This was the main data collection effort, using the automated program that you can find [here](../bp/aciq_dat_biochemical_limits_fixed_h2or_flow600.py).
 
-An exact setup protocol can be found [here](PROTOCOL-NEW-DRAFT.md).
+An exact setup protocol can be found [here](PROTOCOL.md).
 
 Field sampling design details and notes about the various chunks of bad or quarantined data are below.
 
