@@ -1,4 +1,4 @@
-# An Automated Photosynthetic Characterization Method With Fluorescence
+# Coupled A/Ci/Q and chlorophyll fluorescence surfaces for *Phragmites australis* across a coastal marsh elevation gradient
 
 Riley Leff (1), Acadia Conboy (2), Keryn Gedan (1)
 

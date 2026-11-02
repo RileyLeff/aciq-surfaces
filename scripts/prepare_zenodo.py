@@ -89,7 +89,7 @@ def main():
     shutil.copy2(ROOT / "docs/TECHNICAL-REPORT.pdf", destination / "TECHNICAL-REPORT.pdf")
     (destination / "deposit-fields.md").write_text((ROOT / "docs/ZENODO-DEPOSIT.md").read_text())
     (destination / "README.txt").write_text(
-        "A/Ci/Q Surfaces\n"
+        "Coupled A/Ci/Q and chlorophyll fluorescence surfaces for Phragmites australis across a coastal marsh elevation gradient\n"
         "Riley Leff, Acadia Conboy, Keryn Gedan\n\n"
         "Archive version: 1.0.0\n"
         "Archive DOI: https://doi.org/10.5281/zenodo.23785367\n"

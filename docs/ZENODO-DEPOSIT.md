@@ -5,7 +5,7 @@ Reservation is not publication; use this draft rather than creating another reco
 
 ## Record fields
 
-- **Title:** A/Ci/Q Surfaces: LI-6800 programs, coastal photosynthesis data, and analyses
+- **Title:** Coupled A/Ci/Q and chlorophyll fluorescence surfaces for Phragmites australis across a coastal marsh elevation gradient
 - **Resource type:** Dataset
 - **Creators, in order:** Riley Leff; Acadia Conboy; Keryn Gedan
 - **Affiliations:** Riley Leff and Keryn Gedan: George Washington University; Acadia Conboy: James Madison University (as listed on the published protocol).

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the Zenodo archive and the specific commit or release used; cite the protocols.io protocol when using the method."
-type: software
-title: "A/Ci/Q Surfaces: LI-6800 programs, coastal photosynthesis data, and analyses"
+type: dataset
+title: "Coupled A/Ci/Q and chlorophyll fluorescence surfaces for Phragmites australis across a coastal marsh elevation gradient"
 doi: "10.5281/zenodo.23785367"
 version: "1.0.0"
 authors:
