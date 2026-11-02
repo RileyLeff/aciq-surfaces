@@ -6,8 +6,6 @@ node_modules/
 /tmp/
 /output/
 /references/
-/outputs/harlan_2026/
-/outputs/student_presentation_slide6/
 /outputs/*.zip
 *.ttf
 *.otf

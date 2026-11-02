@@ -51,16 +51,10 @@ the final cohort analysis. Source filenames/constants identify their specific in
 - plot_phrag_dat_2021_fit.py
 - plot_phrag_qci_surface.py
 
-## Exports and presentation
+## Exports
 
-- make_morella_poster_figures.py: early method figures and data exports.
-- make_morella_slide6_figure.py: simplified talk figure.
 - export_blog_interactives.py: machine-readable plot data for the blog.
 - try_xy_photosynthesis.py: plotting experiment; requires xy extra.
-- build_hidden_science_pdf.py, build_harlan_2026.py,
-  build_harlan_2026_leaf_poster.py, poster_warp.py, redraw_stoma_background.py:
-  historical presentation tooling, external fonts/assets and optional packages;
-  not portable scientific reproduction targets. See THIRD_PARTY.md.
 
 ## Release tools
 

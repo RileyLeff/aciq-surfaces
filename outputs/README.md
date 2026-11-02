@@ -15,7 +15,6 @@ to preserve script compatibility. Raw evidence is in `../data/`.
 | phrag_brownsville_vcmax_jmax_* | Capacity envelopes and literature comparison |
 | phrag_brownsville_npq_* | NPQ interpolation/plots and leaf-level tests |
 | phrag_brownsville_additive_* / phrag_brownsville_yno_* | Fluorescence energy-partition summaries |
-| poster_morella_* | Morella opening/blue-light story figures |
 | Other species/run-specific names | Earlier experiment-specific diagnostics and fits; see script index |
 
 The main starting reports are [combined analysis](phrag_brownsville_three_tier_analysis.md),
@@ -33,5 +32,5 @@ and primary/sensitivity `.nc` posterior files are ordinary Git files.
 overwrite matching files and may legitimately change checksums, especially plots
 or stochastic fits. Inspect differences before updating the manifest; do not
 silently bless regenerated results. ZIP convenience bundles are omitted because
-their component files are available here or in data/. Poster branding assets and
-render scratch files are intentionally not distributed.
+their component files are available here or in data/. Render scratch files are
+intentionally not distributed.

@@ -12,7 +12,7 @@ def files(area):
     for path in sorted((ROOT / area).rglob("*")):
         if not path.is_file() or path.name in {"README.md", "manifest.csv", "run_index.csv", ".DS_Store"}:
             continue
-        if {"__pycache__", "harlan_2026", "student_presentation_slide6"}.intersection(path.parts):
+        if {"__pycache__"}.intersection(path.parts):
             continue
         if area == "outputs" and path.parent == ROOT / area and path.suffix == ".zip":
             continue
