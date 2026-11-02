@@ -154,18 +154,18 @@ Field sampling design details and notes about the various chunks of bad or quara
 | P01 | Jul 24 | High | Lower | Shade | Pilot (shade) | |
 | P04 | Jul 24 | High | Lower | Shade | Pilot (shade) | |
 | P02 | Jul 26 | Low | Higher | Sun | Primary | Field note: thinner, drier. Had 8 extra fluorometry flashes that land near programmed ones, exclude this from fluorometry analysis. We think the gas exchange data are fine. Similar issues as P05 but less severe. |
-| P03 | Jul 26 | Low | Higher | Sun | Primary | Dark-flash trace file missing |
+| P03 | Jul 26 | Low | Higher | Sun | Primary | |
 | P05 | Jul 27 | Low | Higher | Shade | Quarantined | Severe overlapping flash perturbations: 40 extra, 38 of which are overlapping. Program may have been run twice on accident. |
-| P06 | Jul 27 | Low | Higher | Sun | Primary | Field note: some dry leaves and dry spots, dark-flash trace file missing |
-| P07 | Jul 27 | High | Lower | Shade | Pilot (shade) | Dark-flash trace file missing |
+| P06 | Jul 27 | Low | Higher | Sun | Primary | Field note: some dry leaves and dry spots |
+| P07 | Jul 27 | High | Lower | Shade | Pilot (shade) | |
 | P08 | Jul 28 | High | Lower | Shade | Pilot (shade) | |
-| P09 | Jul 28 | High | Lower | Shade | Quarantined | CO₂ source ran out after Q 200, dark-flash trace file missing |
+| P09 | Jul 28 | High | Lower | Shade | Quarantined | CO₂ source ran out after Q 200 |
 | P10 | Jul 30 | Low | Higher | Sun | Primary | |
 | P11 | Jul 30 | Low | Higher | Sun | Primary | |
 | P12 | Jul 30 | High | Lower | Sun | Primary | Field note: health "decent", some damage to the upper leaves |
 | P13 | Jul 30 | High | Lower | Sun | Primary | Thermocouple glitch at 19:46 (3 rows); Tleaf switched to energy balance for those rows, so gas values are fine |
 | P14 | Jul 31 | High | Lower | Sun | Primary | |
-| P15 | Jul 31 | High | Lower | Sun | Quarantined | A and gsw fell steadily through the run while controls and CO₂ held, dark-flash trace file missing |
+| P15 | Jul 31 | High | Lower | Sun | Quarantined | A and gsw fell steadily through the run while controls and CO₂ held |
 
 We ran out of time to sample shade leaves in the low elevation area. Shade leaves in the high elevation area lack a counterpart.
 
@@ -490,7 +490,7 @@ and the `MPF` and `FLR` copies are in the columns to the right. Top-level times 
 | `Tled` | LED temperature | °C |
 | `Pre_Qin`, `Pre_Qabs`, `Pre_Q_red`, `Pre_Q_blue`, `Pre_Q_farred` | Light just before the flash | µmol m⁻² s⁻¹ |
 | `Pre_Favg`, `Pre_dF/dt` | Mean F and its slope just before the flash | , min⁻¹ |
-| `Fs`, `Fo` | Steady-state F (light flashes, 1,775 files) or minimal F (dark flashes, 46 files) | |
+| `Fs`, `Fo` | Steady-state F (light flashes, 1,775 files) or minimal F (dark flashes, 51 files) | |
 | `SECS` | Time of each trace sample from the flash start (100 samples) | s |
 | `FLUOR`, `DC` | Modulated and DC fluorescence traces | |
 | `PFD`, `RED`, `REDMODAVG`, `FARRED` | Traces of total light, red actinic, measuring light, far red | µmol m⁻² s⁻¹ |

@@ -83,8 +83,8 @@ The instrument-supplied bpdefs module is not a desktop Python dependency.
 There are 30 dated data directories plus eight early standalone logs and one
 sample metadata CSV. The final cohort is P01-P15, July 24-31.
 
-- All 15: 78,576 gas-exchange rows and 869 flash JSON records.
-- Retained 12: 62,326 gas-exchange rows and 665 flash JSON records.
+- All 15: 78,576 gas-exchange rows and 874 flash JSON records.
+- Retained 12: 62,326 gas-exchange rows and 668 flash JSON records.
 - Primary sun-leaf gas comparison: eight leaves, not twelve.
 - High elevation / lower salinity: P12, P13, P14 (three sun leaves).
 - Low elevation / higher salinity: P02, P03, P06, P10, P11 (five sun leaves).
@@ -96,7 +96,9 @@ sample metadata CSV. The final cohort is P01-P15, July 24-31.
 
 Counts are raw gas rows and distinct JSON records, not independent replicates,
 not filtered/binned curve points, and not JSON+XLSX counted twice. The retained
-665 include 656 active records and nine dark records. Extra MPFs remain in raw data.
+668 include 656 active records and 12 dark records. Extra MPFs remain in raw data.
+The saved cohort flash table has 665: the P03, P06 and P07 dark-flash files were
+recovered on November 2 after it was built, and the analysis uses the log Fo/Fm for those runs.
 
 The stored `zone` values High and Low describe ELEVATION, not salinity. Make that
 mapping explicit everywhere. Habitat light availability also differs. The CSV
