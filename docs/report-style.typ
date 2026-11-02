@@ -4,3 +4,5 @@
 #show table.cell.where(y: 0): set text(weight: "bold")
 #set table(stroke: (bottom: 0.4pt + rgb("#d6ded9")))
 #show table: set par(justify: false)
+#show link: set text(fill: rgb("#1a5fb4"))
+#show link: underline
