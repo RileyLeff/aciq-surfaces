@@ -62,7 +62,7 @@ def main():
         "snapshot_kind": "version 1.0.0 archive assembled from working tree; not a Git tag",
         "version": "1.0.0",
         "doi": "10.5281/zenodo.23785367",
-        "protocol_doi": "10.17504/protocols.io.92ld3bnong5b/v1",
+        "protocol_doi": "10.17504/protocols.io.92ld3bnong5b/v2",
         "working_tree_status": git("status", "--short").decode(),
         "explicit_additions": sorted(ADDITIONS),
         "excluded_editorial_drafts": sorted(EXCLUDED),
@@ -93,7 +93,7 @@ def main():
         "Riley Leff, Acadia Conboy, Keryn Gedan\n\n"
         "Archive version: 1.0.0\n"
         "Archive DOI: https://doi.org/10.5281/zenodo.23785367\n"
-        "Operating protocol: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v1\n"
+        "Operating protocol: https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2\n"
         f"Source base commit: {provenance['source_commit']}\n"
         "This working snapshot also includes the archive-preparation files.\n"
         "ARCHIVE-MANIFEST.json inside the ZIP records exact files, hashes, and working-tree status.\n\n"

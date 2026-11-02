@@ -6,7 +6,7 @@ Riley Leff (George Washington University), Acadia Conboy, Keryn Gedan (George Wa
 
 ## Abstract
 
-We're interested in characterizing photosynthetic machinery to better predict how plants will fare under changing climate and learn a bit about the world. In the long term, we hope to scale up and standardize precise measurement of plant mechanics. This protocol documents the approach we ran as a pilot experiment in summer 2026: an automated program for the LI-6800 built on the dynamic assimilation method. We added low-CO2 holding periods between ramps and frequent fluorometry flashes. The program outputs a detailed 3D surface of carbon assimilation (A), intercellular carbon dioxide concentration (Ci), and light levels (Q), and takes about 3 hours to run. This method is not perfect and remains under development: we link to a discussion of some of its limitations below. [LINK: technical report]
+We're interested in characterizing photosynthetic machinery to better predict how plants will fare under changing climate and learn a bit about the world. In the long term, we hope to scale up and standardize precise measurement of plant mechanics. This protocol documents the approach we ran as a pilot experiment in summer 2026: an automated program for the LI-6800 built on the dynamic assimilation method. We added low-CO2 holding periods between ramps and frequent fluorometry flashes. The program outputs a detailed 3D surface of carbon assimilation (A), intercellular carbon dioxide concentration (Ci), and light levels (Q), and takes about 3 hours to run. This method is not perfect and remains under development: we link to a discussion of some of its limitations below. Technical report: https://github.com/RileyLeff/aciq-surfaces#readme
 
 ## Before starting
 
@@ -70,10 +70,10 @@ These controls will be automated while the program runs, this is just for your r
 14. Stop other programs and automatic control routines.
 15. Set flow to 600 umol s-1. Range-match the analyzers across the intended concentrations and make sure your dynamic calibration is set up at the correct flow rate. The supplied background program sets flow to 600 when it starts. To use another flow, change the program's flow setting and recalibrate DAT at the new flow before running it.
 16. Enable Add Dynamic Equations and Use dynamic.
-17. After range-matching, under Log Setup > Match Options, set CO2 match and H2O match to Never match for the run. You don't want matching to interrupt the CO2 ramps. See LI-COR's matching-options documentation [LINK: LI-COR match options].
+17. After range-matching, under Log Setup > Match Options, set CO2 match and H2O match to Never match for the run. You don't want matching to interrupt the CO2 ramps. See LI-COR's matching-options documentation: https://www.licor.com/support/LI-6800/topics/log-files-tab.html
 18. Select Full fluorometer, the optimized MultiPhase flash configuration, and r90B40.
 19. Set Fluorometer Action at Log to 0: Nothing.
-20. Load the background program from GitHub [LINK: program file in repo]. Use the default-settings table for its parameters.
+20. Load the background program from GitHub: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/bp/aciq_dat_biochemical_limits_fixed_h2or_flow600.py Use the default-settings table for its parameters.
 
 ### Clamp in the leaf and start recording
 
@@ -105,12 +105,13 @@ These controls will be automated while the program runs, this is just for your r
 ### Export and inspect the data
 
 31. Export the gas-exchange log and complete flash folder: an LLM agent (preferably a smart one) can do this if you've plugged in an ethernet cable.
-32. Follow the GitHub analysis guide [LINK: analysis guide] for some details on working with the data.
+32. Follow the GitHub data guide for some details on working with the data: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/docs/DATA.md
 
 ### Data processing
 
 33. Example analyses are in the GitHub repository:
-    - examples go here
+    - Script index and how to rerun the analysis: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/scripts/README.md
+    - Analysis write-up: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/docs/ANALYSIS.md
 
 ### Expected outputs
 
@@ -125,9 +126,9 @@ These controls will be automated while the program runs, this is just for your r
 
 Symbols table: A, gsw, Q, CO2_r, Ca, Ci (calculated intercellular, not chloroplastic Cc), H2O_r/H2O_s, VPDleaf, Tleaf, Cc (estimated), gm (mole-fraction basis), Fo/Fm, Fs/Fm', Fv/Fm, PhiPSII (exported as PhiPS2), ETR, NPQ = (Fm - Fm')/Fm', qL (lake model), J, Rd (positive CO2 release), Gamma*.
 
-Data and code availability: Program, example observations, fluorescence events, analysis code, and existing results: [LINK: GitHub repo]
+Data and code availability: Program, example observations, fluorescence events, analysis code, and existing results: https://github.com/RileyLeff/aciq-surfaces
 
-See our pilot data at [LINK: Zenodo DOI] !
+See our pilot data at https://doi.org/10.5281/zenodo.23785367 !
 
 Licenses: Code: MIT. Original data and documentation: CC BY 4.0, with third-party exceptions described on the Github repo.
 
@@ -139,11 +140,11 @@ Safety warnings: Follow LI-COR instructions for CO2 cartridges, chemicals, elect
 
 Here are some disclaimers, things to consider, and a bit more background info:
 
-* Low CO2 does not necessarily guarantee maximum stomatal conductance or eliminate limits on diffusion. We added this with the intent of increasing stomatal conductance, though results were mixed and confounded by machine artifacts. Please see the technical report here: [LINK: technical report]
+* Low CO2 does not necessarily guarantee maximum stomatal conductance or eliminate limits on diffusion. We added this with the intent of increasing stomatal conductance, though results were mixed and confounded by machine artifacts. Please see the analysis here: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/docs/ANALYSIS.md#low-co2-did-not-appear-to-improve-phragmites-australis-gsw
 
 * This method, like many other photosynthetic characterization approaches, requires us to choose between measuring intact plants in field conditions, or cut/damaged plants brought back to the lab. Here, we used cut plants and re-cut them under water well before measurement: see the sample preparation steps. This is a tradeoff where the best approach likely depends on your field site: we found that our instrument was not able to hold internal conditions (e.g. temperature, humidity) constant throughout the day in the humid Virginia summer, and elected to accept the more consistent penalty of cutting each stem, unlocking laboratory measurement conditions. Please be sure to report how your samples were handled, as well as the exact timestamps and the order you processed them in, as the effect size of the handling decision can be large relative to biological differences of interest.
 
-* This protocol is built on top of the Dynamic Assimilation Technique, which accounts for CO2 accumulating in or leaving the chamber air during a ramp. It requires the chamber to be well-mixed, accurate flow measurements, a good match on your IRGAs, and dynamic tuning appropriate to the chamber and flow settings. See LI-COR's DAT setup instructions [LINK: LI-COR DAT setup].
+* This protocol is built on top of the Dynamic Assimilation Technique, which accounts for CO2 accumulating in or leaving the chamber air during a ramp. It requires the chamber to be well-mixed, accurate flow measurements, a good match on your IRGAs, and dynamic tuning appropriate to the chamber and flow settings. See LI-COR's DAT setup instructions: https://www.licor.com/support/LI-6800/topics/dynamic-assimilation-technique.html
 
 * I'm putting this part again for visibility. Before your first set of measurements, you need to complete the dynamic calibration. Note that the 6800's dynamic calibrations are flow-dependent. We used 600 umol s-1, and we were only able to decide on 600 via trial and error. The optimal setting for you depends on the leaf architecture, boundary layer characteristics, and other things that will likely vary across studies -- higher flow trades a larger concentration difference for faster chamber air exchange. You may find that you need a value different than 600, just be sure to recalibrate the dynamic equations every time you try a different value.
 
@@ -166,7 +167,7 @@ Here are some disclaimers, things to consider, and a bit more background info:
 - Sperry J (2013). Cutting-edge research or cutting-edge artefact? An overdue control experiment complicates the xylem refilling story. Plant, Cell & Environment 36:1916-1918. https://doi.org/10.1111/pce.12148
 - Wheeler JK, Huggett BA, Tofte AN, Rockwell FE, Holbrook NM (2013). Cutting xylem under tension or supersaturated with gas can generate PLC and the appearance of rapid recovery from embolism. Plant, Cell & Environment 36:1938-1949. https://doi.org/10.1111/pce.12139
 - LI-COR. LI-6800 operating instructions. https://www.licor.com/support/LI-6800/manuals.html
-- Additional references: [LINK: Literature Cited in repo README]
+- Additional references: https://github.com/RileyLeff/aciq-surfaces/blob/v1.0.0/README.md#literature-cited
 
 ## Troubleshooting
 
@@ -184,7 +185,7 @@ Solution: Check the temperature and humidity controls carefully and be sure to l
 - Opaque cover for dark-adapting the leaves. We used aluminum foil and covered the lab's lone window with a tarp.
 - If cutting branches: we used Fiskars plant clippers, a Home Depot bucket, paper towels, filtered sink water, ziplock bags, field flagging to write IDs on, and a sharpie.
 - Program: aciq_dat_biochemical_limits_fixed_h2or_flow600.py.
-- Repository: [LINK: GitHub repo]
+- Repository: https://github.com/RileyLeff/aciq-surfaces
 
 ## Metadata
 
