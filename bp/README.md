@@ -1,3 +1,5 @@
+This is an AI-generated file. For a human-written version, see the [protocols.io protocol](https://doi.org/10.17504/protocols.io.92ld3bnong5b/v2).
+
 # LI-6800 background programs
 
 ## Start here
