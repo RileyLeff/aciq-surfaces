@@ -88,7 +88,12 @@ the final cohort analysis. Source filenames/constants identify their specific in
 - fit_morella_photorch.py (requires photorch extra)
 - fit_phrag_dat_2021_method.R (requires plantecophys)
 - fit_phrag_fvcb_surface.py
+- plot_morella_initial_curves.py (requires photorch extra)
+- plot_morella_low_co2_blue.py
+- plot_morella_overnight_steady.py
 - plot_phrag_dat_2021_fit.py
+- plot_phrag_gsw_blip_channels.py
+- plot_phrag_gsw_ramp_start_blips.py
 - plot_phrag_qci_surface.py
 
 ## Exports
